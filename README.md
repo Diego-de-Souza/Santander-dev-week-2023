@@ -20,7 +20,7 @@ class Account {
   - accountLimit: float
 }
 
-class Resource {
+class Feature {
   - pixIcon: string
   - pixDescription: string
   - payIcon: string
