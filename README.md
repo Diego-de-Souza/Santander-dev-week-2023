@@ -1,7 +1,9 @@
 # Santander-dev-week-2023
 desafio de código para o bootcamp Santander Becas na plataforma da DIO.me
 
-'''mermaid
+##Diagrama de classes
+
+```mermaid
 class User {
   - name: string
   - account: Account
@@ -40,4 +42,4 @@ User --> Account: has
 User --> Resource: has
 User --> Card: has
 User --> News: has
-'''
+```
