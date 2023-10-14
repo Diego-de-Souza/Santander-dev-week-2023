@@ -39,8 +39,8 @@ class News {
   - newsDescription: string
 }
 
-User --> Account: has
-User --> Resource: has
-User --> Card: has
-User --> News: has
+User "1" "--> "1" Account
+User "1" "--> "N" Resource
+User "1" "--> "1" Card
+User "1" "--> "1" News
 ```
