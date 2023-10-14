@@ -4,6 +4,7 @@ desafio de código para o bootcamp Santander Becas na plataforma da DIO.me
 ##Diagrama de classes
 
 ```mermaid
+classDiagram
 class User {
   - name: string
   - account: Account
