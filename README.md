@@ -1,4 +1,4 @@
-# Santander-dev-week-2023
+ture# Santander-dev-week-2023
 desafio de código para o bootcamp Santander Becas na plataforma da DIO.me
 
 ##Diagrama de classes
@@ -40,7 +40,7 @@ class News {
 }
 
 User "1" *-- "1" Account
-User "1" *-- "N" Resource
+User "1" *-- "N" Feature
 User "1" *-- "1" Card
 User "1" *-- "1" News
 ```
