@@ -6,14 +6,16 @@ desafio de código para o bootcamp Santander Becas na plataforma da DIO.me
 ```mermaid
 classDiagram
 class User {
+  - id: long
   - name: string
   - account: Account
-  - resources: List<Resource>
+  - Feature: List<Resource>
   - card: Card
   - news: List<News>
 }
 
 class Account {
+  - id: long
   - accountNumber: string
   - accountAgency: string
   - accountBalance: float
@@ -21,6 +23,7 @@ class Account {
 }
 
 class Feature {
+  - id: long
   - pixIcon: string
   - pixDescription: string
   - payIcon: string
@@ -30,11 +33,13 @@ class Feature {
 }
 
 class Card {
+  - id: long
   - Number: string
   - Limit: float
 }
 
 class News {
+  - id: long
   - newsIcon: string
   - newsDescription: string
 }
