@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Application DEV" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <envs>
+      <env name="SPRING_PROFILES_ACTIVE" value="dev" />
+    </envs>
+    <module name="santanderDevWeek2023.main" />
+    <selectedOptions>
+      <option name="spring.boot.profiles" visible="false" />
+    </selectedOptions>
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.ogeid.santanderDevWeek2023.SantanderDevWeek2023Application" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
