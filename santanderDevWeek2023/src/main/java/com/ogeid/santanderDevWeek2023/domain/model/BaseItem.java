@@ -8,33 +8,37 @@ import jakarta.persistence.MappedSuperclass;
 @MappedSuperclass
 public abstract class BaseItem {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String Icon;
-    private String Description;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private String icon;
 
-    public void setIcon(String icon) {
-        Icon = icon;
-    }
-
-    public void setDescription(String description) {
-        Description = description;
-    }
+    private String description;
 
     public Long getId() {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getIcon() {
-        return Icon;
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
 }

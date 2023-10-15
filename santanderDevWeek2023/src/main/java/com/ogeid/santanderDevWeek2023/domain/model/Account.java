@@ -12,53 +12,54 @@ public class Account {
     private Long id;
 
     @Column(unique = true)
-    private String Number;
+    private String number;
 
-    private String Agency;
+    private String agency;
 
-    @Column(scale = 2, precision = 13 )
-    private BigDecimal accountBalance;
+    @Column(precision = 13, scale = 2)
+    private BigDecimal balance;
 
-    @Column(name = "additional_limit",scale = 2, precision = 13 )
+    @Column(name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setNumber(String accountNumber) {
-        this.Number = accountNumber;
-    }
-
-    public void setAgency(String accountAgency) {
-        this.Agency = accountAgency;
-    }
-
-    public void setAccountBalance(BigDecimal accountBalance) {
-        this.accountBalance = accountBalance;
-    }
-
-    public void setLimit(BigDecimal accountLimit) {
-        this.limit = accountLimit;
-    }
 
     public Long getId() {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getNumber() {
-        return Number;
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public String getAgency() {
-        return Agency;
+        return agency;
     }
 
-    public BigDecimal getAccountBalance() {
-        return accountBalance;
+    public void setAgency(String agency) {
+        this.agency = agency;
     }
 
-    public BigDecimal getLimit() {
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
+
+    public BigDecimal getLimitimit() {
         return limit;
     }
+
+    public void setLimit(BigDecimal limit) {
+        this.limit = limit;
+    }
+
 }
