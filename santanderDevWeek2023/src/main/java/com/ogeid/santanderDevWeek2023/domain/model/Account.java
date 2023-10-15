@@ -12,53 +12,53 @@ public class Account {
     private Long id;
 
     @Column(unique = true)
-    private String accountNumber;
+    private String Number;
 
-    private String accountAgency;
+    private String Agency;
 
     @Column(scale = 2, precision = 13 )
     private BigDecimal accountBalance;
 
     @Column(name = "additional_limit",scale = 2, precision = 13 )
-    private BigDecimal accountLimit;
+    private BigDecimal limit;
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
+    public void setNumber(String accountNumber) {
+        this.Number = accountNumber;
     }
 
-    public void setAccountAgency(String accountAgency) {
-        this.accountAgency = accountAgency;
+    public void setAgency(String accountAgency) {
+        this.Agency = accountAgency;
     }
 
     public void setAccountBalance(BigDecimal accountBalance) {
         this.accountBalance = accountBalance;
     }
 
-    public void setAccountLimit(BigDecimal accountLimit) {
-        this.accountLimit = accountLimit;
+    public void setLimit(BigDecimal accountLimit) {
+        this.limit = accountLimit;
     }
 
     public Long getId() {
         return id;
     }
 
-    public String getAccountNumber() {
-        return accountNumber;
+    public String getNumber() {
+        return Number;
     }
 
-    public String getAccountAgency() {
-        return accountAgency;
+    public String getAgency() {
+        return Agency;
     }
 
     public BigDecimal getAccountBalance() {
         return accountBalance;
     }
 
-    public BigDecimal getAccountLimit() {
-        return accountLimit;
+    public BigDecimal getLimit() {
+        return limit;
     }
 }
